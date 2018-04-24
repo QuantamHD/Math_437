@@ -1,0 +1,99 @@
+\documentclass{article}
+  \usepackage{amssymb}
+  \usepackage{geometry}
+  \usepackage{amsmath}
+  \usepackage{placeins}
+
+
+  \begin{document}
+  
+  \title{Chapter 7}
+  \author{Ethan Mahintorabi}
+  \date{April 12, 2018}
+  
+  \maketitle
+  \section*{(7.A)}
+    \subsection*{(i)}
+      To show that associative property holds for the cosets $[a], [b], [c]$ of $R/I$ we will begin with the expression
+      \[
+        \begin{split}
+          [a] + ([b] + [c]) &= [a] + [b+c] \text{ By the definition of addition in } R/I\\
+          &= [a+b+c] \text{ By the definition of addition in } R/I\\
+          &= [(a+b) + c] \text{ because associativity holds in } R\\
+          &= [(a+b)] + [c] \text{ by the definition of addition in } R/I\\
+          &= ([a] + [b]) + [c] \text{ by the definition of addition in } R/I.
+        \end{split}
+      \]
+
+      We have shown that addition is associative by show that $[a] + ([b] + [c]) = ([a] + [b]) + [c]$. By a similar argument we can show that multiplication is also associative under $R/I$ with the same definition of the cosets $[a],[b],[c]$ and the expression
+      
+      \[
+        \begin{split}
+          [a] \cdot ([b] \cdot [c]) &= [a] \cdot [b \cdot c] \text{ By the definition of multiplication in } R/I\\
+          &= [a \cdot b \cdot c] \text{ By the definition of multiplication in } R/I\\
+          &= [(a \cdot b) \cdot c] \text{ because associativity holds in } R\\
+          &= [(a \cdot b)] \cdot [c] \text{ by the definition of multiplication in } R/I\\
+          &= ([a] \cdot [b]) \cdot [c] \text{ by the definition of multiplication in } R/I.
+        \end{split}
+      \]
+
+      To show that the cosets of $R/I$ are in fact a ring we must also show that the addition is commutative. We will begin with the expression 
+
+      \[
+        \begin{split}
+          [a] + [b] &= [a+b] \text{ By the definition of addition in } R/I\\
+          &= [b+a] \text{ Becuase addition is commutative in } R\\
+          &= [b] + [a] \text{ By the definition of addition in } R/I.\\
+        \end{split}
+      \]
+
+      We can see that addition is commutative in $R/I$ in both directions due to the equals sign. 
+      
+      \paragraph{Additive Inverse} We will show that every coset in $R/I$ must admit an additive inverse due to the nature of $R$. We will begin with a coset $[a] \in R/I$ where $a \in R$ by the definition of a coset representative. Due to the nature of the equivalence relationship we know that every element of $R$ belongs to some coset; which means that we can also define another coset representative $[-a] \in R/I$; we know $-a \in R$ because in a ring every element must have an additive inverse and $a-a = 0$. Now we can show that $[a] + [-a] = [a-a] = [0]$ and as we showed earlier addition is commutative and $[-a] + [a] = [0]$. Thus, we have shown that any coset in $R/I$ has an additive inverse.
+
+    \subsection*{(ii)}
+    We observe that in the ring $(X^2 + 1)$ for a general polynomial $f(x) \in \mathbb{R}[X]$ will admit the form $(X^2 + 1)f(x) = (X^2+1)(a_1 + a_2X + \dots + a_nX^n) = (a_1 + a_2X + \dots + a_nX^n) + (a_1X^2 + a_2X^3 + \dots + a_nX^n)$. As we can observe in the last expression the ideal $(X^2 + 1)$ cannot generate any polynomials of degree less than 2 except for 0. Under that assumption we can use the definition of our equivalence relationship $\{s \in R | s = r + a \text{ for some } a \in I\}$  to show that the coset representatives are of the form $a +bX$, under this definition we must be able to define any $r$ in terms of a coset representative and some element in the ideal. Since the ideal $(X^2 + 1)$ can generate all polynomials of degree greater than or equal to 2 it must be the case that $r = a + bX$ so that we can cover the set $\mathbb{R}[X]$.
+
+    \paragraph{General sum of $R[X]/(X^2 + 1)$} With a good set of coset representatives for $R[X]/(X^2 + 1)$ we can show that for $[a] = (a_0 + b_0X + (X^2 + 1)),  [b] = (a_1 + b_1X + (X^2 + 1)) \in R[X]/(X^2 + 1)$ the general form of 
+
+    \[
+        \begin{split}
+          [a] + [b] &= (a_0 + b_0X + (X^2 + 1)) +  (a_1 + b_1X + (X^2 + 1))\\
+          &= (a_0+a_1) + (b_0 + b_1)X + (X^2 + 1).
+        \end{split}
+    \]
+
+
+    \paragraph{General multiplication of $R[X]/(X^2 + 1)$} With a good set of coset representatives for $R[X]/(X^2 + 1)$ we can show that for $[a] = (a_0 + b_0X + (X^2 + 1)),  [b] = (a_1 + b_1X + (X^2 + 1)) \in R[X]/(X^2 + 1)$ the general form of 
+
+    \[
+        \begin{split}
+          [a] \cdot [b] &= (a_0 + b_0X + (X^2 + 1)) \cdot  (a_1 + b_1X + (X^2 + 1))\\
+          &= (a_0a_1) + (a_0b_1 + b_0a_1)X + (b_0b_1)X^2 + (X^2 + 1)\\
+          &= (a_0a_1) + (a_0b_1 + b_0a_1)X - (b_0b_1) + (X^2 + 1)\\
+          &= (a_0a_1 - b_0b_1) + (a_0b_1 + b_0a_1)X + (X^2 + 1).
+        \end{split}
+    \]
+
+    In the last step we must realize that $X^2$ belongs to the coset $[-1]$ under the equivalence relationship we defined at the beginning of the chapter.
+
+  \section*{7.B}
+    \subsection*{(i)}
+      During the proof that $R/I$ is a ring we used the fact that elements of $I$ are closed under multiplication from elements of $R$ to show that $(r-s)a + s(a-b) \in I$. Without that property we would not be able to show that the multiplication operator is well defined.
+
+      \paragraph{Example} Given the subring of the rationals called the integers we take the following example where $r,s,a,b \in R$ and $(r-s), (a-b) \in I$. We should find that $(r - s)a + s(a - b)$ is in $I$ if the operation of multiplication over the cosets was well defined, but for the example $r = \frac{4}{3}, s = \frac{1}{3}, a = \frac{5}{4}, b = \frac{1}{4}$ it is clear that $(r-s), (a-b)\in I$, but $(1)\frac{5}{4} + (1)\frac{1}{3} \notin I$.
+
+    \subsection*{(ii)}
+      In chapter 6 and 7 we concluded if we have the following conditions we can create a quotient ring. One we have a parent ring in this case $\mathbb{Z}$ and two a subring $n\mathbb{Z}$ which is an ideal, shown in chapter 6, we can construct a new quotient ring $R/I$ or $\mathbb{Z}/n\mathbb{Z}$ by Theorem 7.4.
+
+    \subsection*{(iii)}
+      \paragraph{$\mathbb{Z}[X], I = (X^2)$}, The coset representatives of $I$ all have the form $a_1X^2 + a_2X^3 \dots + a_nX^{n+2}$ where $a_i \in \mathbb{Z}$  under the equivalence relationship $\{s \in R | s = r + a \text{ for some } a \in I\}$ we can see that every $\mathbb{Z}[X]$ must be the sum of some coset representative and an element of the ideal $(X^2)$. To guarantee this condition is held the coset representatives must be of the form $(a+bX)$ where $a,b \in \mathbb{Z}$ so that every $f(x) \in \mathbb{Z}[X]$ can be formed.
+
+      \paragraph{$\mathbb{Z}[X], I = (2, X^2)$}, The coset representatives of $I$ all have the form $2a_1 + 2a_2X + a_3X^2 \dots + a_nX^{n}$ where $a_i \in \mathbb{Z}$, and under the equivalence relationship $\{s \in R | s = r + a \text{ for some } a \in I\}$ we can see that every $\mathbb{Z}[X]$ must be the sum of some coset representative and an element of the ideal $(2, X^2)$. To guarantee this condition is held the coset representatives must be of the form $(1+X)$ so that every $f(x) \in \mathbb{Z}[X]$ can be formed.
+
+  \section*{7.D}
+      \paragraph{The ring $R/(0)$} We will use the following definition of the equivalence relationship for quotient rings $\{s \in R | s - r \in I\}$. In the quotient ring $R/(0)$ the ideal contains only one element called 0, and under the equivalence relationship that would mean that our choice of coset representatives is limited to one element for every element of $R$. Thus, the ring $R/(0)$ is the set of cosets where every element of $R$ is a coset containing only itself. This ring is different from $R$ because they are cosets and not elements specifically, but operate almost identically.
+
+      \paragraph{The ring $R/R$} We will use the following definition of the equivalence relationship for quotient rings $\{s \in R | s - r \in I\}$. In the quotient ring $R/R$ the ideal contains all the elements of $R$, and under the equivalence relationship that would mean that our choice of coset representatives is not limited to one element in fact we could choose any element of $r$ as our coset representative and it would be the case that every element in $R$ belongs to the same coset in that case we could say that every element belongs to the coset $[0]$, and the ring $R/R$ is essentially $(0)$, however once again it is the coset $[0]$, and not the element 0.
+
+\end{document}

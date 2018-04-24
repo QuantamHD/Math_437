@@ -1,0 +1,333 @@
+\documentclass{article}
+  \usepackage{amssymb}
+  \usepackage{geometry}
+  \usepackage{amsmath}
+  \usepackage{placeins}
+
+
+  \begin{document}
+  
+  \title{Chapter 1}
+  \author{Ethan Mahintorabi}
+  
+  \maketitle
+
+  
+  \section*{1.A}
+    \subsection*{(i)}
+      \paragraph{Addition over $\mathbb{N}$}
+      Let's define the natural numbers in terms of the operation of addition we will start with the first element which we will call $1$. To generate the rest of the natural numbers we will first say that $1+1$ is a new element in $\mathbb{N}$ distinct from 1. We can continue this indefinitely and we will say that $1 + \dots + 1$ is in the natural numbers and defines the natural numbers. Since any two elements $a,b \in \mathbb{N}$ can be expressed in terms of the the addition of ones, we can see that $a+b$ can also be expressed in terms of the addition of ones and thus is always a natural number.
+
+      \paragraph{Multiplication over $\mathbb{N}$}
+      We can define multiplication as a repeated form of addition. Specifically if we have $2 \cdot 3$ or rather $1+1+1+1+1+1$, we can see that any multiplication of two natural numbers $a$ and $b$ is also a series of additions of ones. Thus, we see that multiplication over the natural numbers is always a natural number.
+
+      \paragraph{Addition over $\mathbb{Z}$}
+      To extend this argument to the integers $\mathbb{Z}$ we must introduce the element $-1$ and say that $1 + -1 = 0$, and $1 + 0 = 1$ and $-1 + 0 = -1$. Thus, we say that for the integers $\mathbb{Z}$ the set can be defined as any sequence of additions of ones or negative ones. For addition we take $2 + -3 = 1 + 1 + (-1) + (-1) + (-1)$. This operation can be generalized to any two elements $a,b \in \mathbb{Z}$ and thus $a+b$ will equal a sequence of ones, negative ones or zero.
+
+      \paragraph{Multiplication over $\mathbb{Z}$}
+      We can once again define multiplication in terms of repeated additions. For any two elements $a,b \in \mathbb{Z}$ we also say that this multiplication will always result in either a sequence of ones or negative ones and in the case of $0 \cdot b = 0$ and $a \cdot 0 = 0$. Thus, Thus every multiplication $a \cdot b$ is in the integers.
+      
+    \subsection*{(ii)}
+      \paragraph{Commutativity of addition over $\mathbb{N}$}
+      If we have 2 elements $a,b \in \mathbb{N}$ then add them together we have a new element $c$ at a new length who is greater than both $a$ and $b$. If we move $b$ to be in front of $a$ before we do the addition the total length after the addition is no different from performing $a + b$. Thus, addition over the $\mathbb{N}$ is commutative $a+b = b+a$
+      
+      \paragraph{Associativity of addition over $\mathbb{N}$}
+      If we have the following expression $(a+b) + c = a+ (b+c)$ we can imagine that we can add $a+b$ first then add $c$ which will result in a new length greater than any of it's component parts. Changing the way in which we add these lengths does not change the total length after performing all of the additions. Thus, addition is associative of addition over $\mathbb{N}$.
+
+    \subsection*{(iii)}
+      \paragraph{Distributivity over addition on $\mathbb{N}$}
+      We know that multiplication can be though of as nothing more than repeated addition. If we have the following expression $a \cdot (b+c)$. We know that if we add $b+c = d$ first and then multiply we will have to add a to itself $d$ times. If we however imagine distributing the multiplication over the addition we have the following $ab + ac$ which means repeat $a$, $b$ times then add it to $a$ repeated $c$ times. Either way we repeat $a$, $b+c$ times. Thus, multiplication distributes over addition on $\mathbb{N}$
+    
+    \subsection*{(iv)}
+      \paragraph{Inverse operations without identity element}
+      By definition there is an inverse for an element $a$, iff there exists an element $a^{\prime}$ such that $a \star a^{\prime} = e$. If there is no identity element in the set then it cannot have an inverse because the result of the inverse operation must be the identity element to be an inverse. Thus, without an identity element there can be no inverse operations.
+
+    \subsection*{(v)}
+      \paragraph{Additive inverse over $\mathbb{C}$}
+      If we take the common definition of a complex number as $a + bi$ we can always define a additive inverse for it by simply flipping the signs and creating a new element $-a - bi$. By adding these two elements from $\mathbb{C}$ it will always result in $0$ meaning that any element in $\mathbb{C}$ has an additive inverse.
+
+      \paragraph{Multiplicative inverse over $\mathbb{C}$}
+      We know that for any complex number $a \in \mathbb{C}$ there exists a multiplicative inverse for $a$, and can be found by placing $\frac{1}{a} = a^{\prime}$. This however is undefined at the value of $a=0$. In this case there is no multiplicative inverse of the element zero in the complex set. While every other element of the complex set does have a multiplicative inverse.
+
+  
+  \section*{1.B}
+    \subsection*{(i)}
+      \paragraph{Addition. Identity, inverses}
+      No set is defined for this operation which is required to be called an operation. To also show that addition is not a universal operation on any given subset take the set $\{1\}$ and add two elements from this set $1+1$, since this element is not in the set is not an operation.
+
+    \subsection*{(ii)}
+      \paragraph{Division on the set $\mathbb{Q}$. Associativity, identity inverses.}
+      Division over $\mathbb{Q}$ is not an operation because for some operations $a/b$ where b is zero and by the definition of $\mathbb{Q}$ it is not an element in $\mathbb{Q}$. Thus, by the definition of operations it is not an operation.
+
+    \subsection*{(iii)}
+      \paragraph{Subtraction on the set $\mathbb{Z}$. Associativity, identity.}
+      Since a subtraction on any two elements of $\mathbb{Z}$ it is an operation. However, it is not associative for a counter example $1 - (1 - 1) \neq (1-1) -1$. There is no way to define an identity for subtraction except for 0 because subtraction is also not commutative therefore there is no identity such that $e - a = a - e = a$. In the case where $a = 0$ it does have an identity element 0.
+
+    \subsection*{(iv)}
+        \paragraph{Set of two by two matricies with $\mathbb{R}$ with multiplication and addition. Distributive}
+        Addition is an operation over the set $\mathbb{R}^{2 \times 2}$ is an operation because  
+        \[
+        \left[ {\begin{array}{cc}
+            a & b \\
+            c & d \\
+        \end{array} } \right]
+        +
+        \left[ {\begin{array}{cc}
+            e & f \\
+            g & h \\
+        \end{array} } \right]
+        = 
+        \left[ {\begin{array}{cc}
+            a+e & b+f \\
+            c+g & d+h \\
+        \end{array} } \right]
+        \]
+
+        since the matrix addition operation is simply adding in the elements by their indices. We can see that the addition between two matrices will always result in a new matrix with 4 new elements created by adding two elements from the real numbers which we know is a closed operation thus we will always end up with an element from the set $\mathbb{R}^{2 \times 2}$. Thus, addition over 2 by 2 matricies is an operation.
+
+        \paragraph{}
+        Matrix multiplication is also an operation over the real entries of a 2x2 matrix given the following definition.
+        \[
+        \left[ {\begin{array}{cc}
+            a & b \\
+            c & d \\
+        \end{array} } \right]
+        \cdot
+        \left[ {\begin{array}{cc}
+            e & f \\
+            g & h \\
+        \end{array} } \right]
+        = 
+        \left[ {\begin{array}{cc}
+            ae + bg & af + bh \\
+            ce+dg & cf+hd \\
+        \end{array} } \right]
+        \]
+
+        Since we know that the real numbers are closed under addition and multiplication we also know that for a generalized 2x2 matrix product we will always have a 2x2 matrix with real entries thus, we know that the matrix product of a 2x2 matrix is an operation.
+
+        \paragraph{}
+        We will now show that 2x2 matrix multiplication distributes over matrix addition. We will begin with the following expression where we perform the additions first.
+        \[
+            \left(
+            \left[ {\begin{array}{cc}
+                a & b \\
+                c & d \\
+            \end{array} } \right]
+            +
+            \left[ {\begin{array}{cc}
+                e & f \\
+                g & h \\
+            \end{array} } \right]
+            \right)
+        \cdot
+            \left[ {\begin{array}{cc}
+            i & j \\
+            k & l \\
+            \end{array} } \right]
+        \]
+        \[
+            \left[ {\begin{array}{cc}
+                a+e & b+f \\
+                c+g & d+h \\
+            \end{array} } \right]
+        \cdot
+            \left[ {\begin{array}{cc}
+            i & j \\
+            k & l \\
+            \end{array} } \right]
+        \]
+        \[
+            \left[ {\begin{array}{cc}
+                ai+ei + bk+fk & aj+ej + bl+fl\\
+                ci+gi + dk+hk & cj+gj+dl+hl \\
+            \end{array} } \right]
+        \]
+
+        Next we will perform the multiplication first and observe the results.
+
+        \[
+            \left(
+            \left[ {\begin{array}{cc}
+                a & b \\
+                c & d \\
+            \end{array} } \right]
+            +
+            \left[ {\begin{array}{cc}
+                e & f \\
+                g & h \\
+            \end{array} } \right]
+            \right)
+        \cdot
+            \left[ {\begin{array}{cc}
+            i & j \\
+            k & l \\
+            \end{array} } \right]
+        \]
+
+        \[
+            \left[ {\begin{array}{cc}
+                a & b \\
+                c & d \\
+            \end{array} } \right]
+            \cdot
+            \left[ {\begin{array}{cc}
+                i & j \\
+                k & l \\
+            \end{array} } \right]
+            +
+            \left[ {\begin{array}{cc}
+                e & f \\
+                g & h \\
+            \end{array} } \right]
+            \cdot
+            \left[ {\begin{array}{cc}
+                i & j \\
+                k & l \\
+            \end{array} } \right]
+        \]
+
+        \[
+            \left[ {\begin{array}{cc}
+                ai+ei + bk+fk & aj+ej + bl+fl\\
+                ci+gi + dk+hk & cj+gj+dl+hl \\
+            \end{array} } \right]
+        \]
+
+        We can see that in both case we have the exact same 2x2 matrix thus, matrix multiplication is a left distributive. We will now show that it is right distributive. Once again first showing the results of performing the addition first.
+
+        \[
+            \left[ {\begin{array}{cc}
+            i & j \\
+            k & l \\
+            \end{array} } \right]
+            \cdot
+            \left(
+            \left[ {\begin{array}{cc}
+                a & b \\
+                c & d \\
+            \end{array} } \right]
+            +
+            \left[ {\begin{array}{cc}
+                e & f \\
+                g & h \\
+            \end{array} } \right]
+            \right)
+        \]
+
+        \[
+            \left[ {\begin{array}{cc}
+                i & j \\
+                k & l \\
+            \end{array} } \right]
+                \cdot
+            \left[ {\begin{array}{cc}
+                a+e & b+f \\
+                c+g & d+h \\
+            \end{array} } \right]
+        \]
+
+        \[
+            \left[ {\begin{array}{cc}
+                ia+ie+jc+jg & ib+if+jd+jh\\
+                ka+ke+lc+lg & kb+kf+ld+lf \\
+            \end{array} } \right]
+        \]
+
+        Then showing that this results in the same result by performing the multiplication first.
+        
+        \[
+            \left[ {\begin{array}{cc}
+            i & j \\
+            k & l \\
+            \end{array} } \right]
+            \cdot
+            \left(
+            \left[ {\begin{array}{cc}
+                a & b \\
+                c & d \\
+            \end{array} } \right]
+            +
+            \left[ {\begin{array}{cc}
+                e & f \\
+                g & h \\
+            \end{array} } \right]
+            \right)
+        \]
+
+        \[
+            \left[ {\begin{array}{cc}
+                i & j \\
+                k & l \\
+            \end{array} } \right]
+            \cdot
+            \left[ {\begin{array}{cc}
+                a & b \\
+                c & d \\
+            \end{array} } \right]
+            +
+            \left[ {\begin{array}{cc}
+                i & j \\
+                k & l \\
+            \end{array} } \right]
+            \cdot
+            \left[ {\begin{array}{cc}
+                e & f \\
+                g & h \\
+            \end{array} } \right]
+        \]
+
+        \[
+            \left[ {\begin{array}{cc}
+                ia + jc + ie + jg & ie+jg+if+jh\\
+                ka + lc + kb + ld & ke+lg+ kf+ lh \\
+            \end{array} } \right]
+        \]
+        This result is the same one as above and thus matrix multiplication is right distributive.
+    
+        \paragraph{}
+        We have shown that matrix multiplication is both left and right distributive thus, we know that matrix multiplication is distributive in general.
+
+     \subsection*{(v)}
+        \paragraph{}
+            The Cayley table clearly shows that this is an operation as every element in the set is mapped to another element in the set and thus by the definition of an operation it is an operation. The operation is not commutative as shown by $a \star b = d$ and $b \star a = f$. There is an identity element e because $e \star x$ and $x \star e$ where $x \in \{a,b,c,d,e,f\}$ always results in $x$. Every element in the table has one entry whose result is the identity element e thus every element has an inverse.
+    
+    \section*{(1.C)}
+            \subsection*{(i)}
+                \paragraph{}
+                Given the Cayley table in Table 1 we can see that we can satisfy the following constraint that there is an element $e \in A$ such that $e \star a = a$ where $a \in A$, but not admit that $a \star e = a$.
+        
+                \FloatBarrier
+                \begin{table}[h]
+                    \centering
+                    \caption{Identity Table}
+                    \begin{tabular}{|l|l|l|l|}
+                    \hline
+                    $\star$ & a & b & e \\ \hline
+                    a     & a & a & b \\ \hline
+                    b     & a & a & a \\ \hline
+                    e     & a & b & e \\ \hline
+                    \end{tabular}
+                \end{table}
+                \begin{table}[h]
+                    \centering
+                    \caption{Inverse Table}
+                    \label{my-label}
+                    \begin{tabular}{|l|l|l|l|l|}
+                    \hline
+                    $\star$ & a & b & c & e \\ \hline
+                    a       & a & a & e & a \\ \hline
+                    b       & e & a & a & b \\ \hline
+                    c       & a & e & e & c \\ \hline
+                    e       & a & b & c & e \\ \hline
+                    \end{tabular}
+                    \end{table}
+                \FloatBarrier
+        
+                Thus, we know it must be required to have a commutative rule in our definition of an identity element.
+        
+            \subsection*{(ii)}
+            As we can see in table 2 we can create inverse elements $a^{\prime} \star a = e$, but not have it be the case that $a \star a^{\prime} = e$ as an example $b \star a = e$ but $a \star b = a$. Thus, we require the commutative restriction in the definition of the inverse if we want the inverse to commute with elements in our set.'
+     
+    
+  \end{document}

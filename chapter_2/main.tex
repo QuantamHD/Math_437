@@ -1,0 +1,214 @@
+\documentclass{article}
+  \usepackage{amssymb}
+  \usepackage{geometry}
+  \usepackage{amsmath}
+  \usepackage{placeins}
+
+
+  \begin{document}
+  
+  \title{Chapter 2}
+  \author{Ethan Mahintorabi}
+  \date{February, 15, 2018}
+  
+  \maketitle
+  \section*{(2.A)}
+    \subsection*{(i)}
+      \paragraph{}
+        We know that the element 0 multiplied times any other element is zero. We will assume that for a given field $F$ that is not the trivial field $\{0\}$ that there exists an element $a^{\prime} \in F$ such that $a \star 0 = 0 \star a = e$ where $e$ is the multiplicative identity element of the field $F$. However, since we know that 0 multiplied times anything is in fact zero the multiplicative identity element must be 0. This is only the case in the trivial field $\{0\}$ which we know $F$ is not thus, we have arrived at a contradiction which implies that there is no field except for $\{0\}$ that has multiplicative inverse for the additive identity 0.
+    
+    \subsection*{(ii)}
+      \paragraph{Prove $\mathbb{N}$ is not a field}
+      The set $\mathbb{N}$ is not a field because it has no additive identity because there is no zero element.
+
+      \paragraph{Prove $\mathbb{Z}$ is not a field}
+      The set $\mathbb{Z}$, there is no multiplicative inverse for the element 2 in the set $\mathbb{Z}$ thus, it is not a field.
+
+      \paragraph{Prove $\mathbb{Q}$ is a field}
+      Since we know that $\mathbb{Q} \subset \mathbb{C}$ properties A,C and D are inherited from $\mathbb{C}$. Any operation over the rationals could be done over the complex numbers instead and would respect all the properties of a field thus, the rationals inherit these properties from the complex numbers. Since both $0,1 \in \mathbb{C}$ and $0,1 \in \mathbb{Q}$ we know that those elements must be the additive and multiplicative identity for $\mathbb{Q}$ because those elements are the identities for every element in $\mathbb{C}$ of which are all of the rational numbers. 
+
+      \paragraph{}
+      We claim that an element from $\frac{a}{b} \in \mathbb{Q}$ has a multiplicative inverse because as we found with the complex numbers there is a multiplicative inverse defined as $\frac{1}{a+bi}$ for any $a+bi \in \mathbb{C}$. Since the rationals are a subset of the complex numbers we know every element except for 0 has a multiplicative inverse by defining $a \in \mathbb{Q}$ and setting $b=0$. Thus, there is a multiplicative identity for the rationals.
+
+      \paragraph{}
+      There is an additive inverse for every element in $\mathbb{Q}$ defined as $\frac{-a}{b}$ for an $\frac{a}{b} \in \mathbb{Q}$. We can show that as follows
+
+      \[
+        \begin{split}
+          \frac{-a}{b} + \frac{a}{b} &= \frac{a}{b} + \frac{-a}{b}\\
+          \frac{0}{b} &= \frac{0}{b}\\
+          0 &= 0.
+        \end{split}
+      \]
+
+      Since the rationals satisfy all the properties of a filed it is by definition a field.
+
+      \paragraph{Prove $\mathbb{R}$ is a field}
+      Since $\mathbb{R}$ is a subset of the complex numbers it inherits that both operations are associative and commutative because any operation that could be performed in the reals could be performed in the complex numbers and thus would have to also be associative and commutative.
+
+      \paragraph{}
+      The real numbers also inherit the distributive property from the complex number by the same argument as above that the operations over the complex numbers are distributive thus, that property is inherited by all subsets of the complex numbers whose addition and multiplication operators are defined over the subset.
+
+      \paragraph{}
+      The reals have multiplicative and additive identity elements 1 and 0 respectively. Since that 1 and 0 are the identities for the complex numbers we know that they are also the identities for the reals because the reals are a subset of the complex numbers and the identities 1 and 0 apply to all of the complex numbers including the reals.
+
+      \paragraph{}
+      Since we know that there exists a multiplicative inverse for every element in the complex numbers except for zero defined as $\frac{1}{a+bi}$ where $a+bi \in \mathbb{C}$. Since the real numbers are a subset of the complex numbers we can define the real inverse as $a \in \mathbb{R}$ and $b = 0$ and therefore every element in the real numbers has multiplicative inverse except for 0.
+
+      \paragraph{}
+      The real number's additive identity can be defined as $-a$ for all real numbers $a \in \mathbb{R}$. We can prove this as follows
+
+      \[
+        \begin{split}
+          a + -a &= -a + a\\
+          0 &= 0.
+        \end{split}
+      \]
+
+      Thus, we have shown that there is an additive for the real numbers for all real numbers. We have shown that the real numbers satisfy all the properties of field and thus the real numbers are a filed with the operations of addition and multiplication.
+
+      \paragraph{Show $\mathbb{C}$ is a field}
+      As example 1.2 explained addition and multiplication are operations on the complex numbers.
+
+      \paragraph{}
+      As example 1.5 explained that multiplication and addition are both associative and commutative.
+
+      \paragraph{}
+      As example 1.7 explained multiplication distributes over addition on the complex numbers.
+
+      \paragraph{}
+      As example 1.10 there are additive and multiplicative identities 0 and 1 respectively for the complex numbers.
+
+      \paragraph{}
+      And as problem 1.A(v) showed the complex numbers have an additive inverse for all complex numbers. While there is a multiplicative inverse for all complex numbers except 0.
+
+      \paragraph{}
+      Thus, we have shown that the complex numbers along with addition and multiplication are a field.
+
+    \subsection*{(iii)}
+      \paragraph{}
+      The set zero is a field as we will show. The operations of addition and multiplication are operations on the set 0. Addition will always result in zero thus it is an operation $ 0 + 0 = 0$. Multiplication $0 \cdot 0 = 0$ for all multiplications over the set 0 thus it is also an operation. Since any multiplications or additions over the set are indistinguishable they are both associative and commutative. Since any set of multiplications and additions will always result in zero; multiplication by definition distributes over addition because it will always result in 0. The additive identity is easy it is zero $0 + 0 = 0$, but the multiplicative identity is a bit more tricky it is also zero because $0 \cdot 0 = 0$ thus it is a multiplicative identity for every element in $\{0\}$. Every element has an additive inverse zero, and every element has a multiplicative inverse that is not zero. Thus, $\{0\}$ with operations addition and multiplication is a field.
+
+  \section*{(2.B)}
+    \subsection*{(i)}
+    This is not a field because the multiplication operator is not commutative. As a counter example take the following where $a = 1, b = 2, c = 3$.
+    \[
+      \begin{split}
+        (a \cdot b) \cdot c &= a \cdot (b \cdot c)\\
+        ((a+b)(a+b)) \cdot c  &= a \cdot ((b+c)(b+c))\\
+        (((a+b)(a+b)) + c)(((a+b)(a+b)) + c) &= (a+((b+c)(b+c)))(((b+c)(b+c)))\\
+        (12)(12) &= (26)(26)\\
+      \end{split}
+    \]
+
+    As we have shown this operation is not associative thus it cannot be a field.
+
+    \subsection*{(ii)}
+      The set of 2x2 matrices with entries in $\mathbb{R}$ is not a field because the operation of multiplication is not commutative as a counter example take the following.
+
+      \[
+        \begin{split}
+            A&=
+           \left[ {\begin{array}{cc}
+            1 & 2 \\
+            3 & 4 \\
+           \end{array} } \right]\\
+           B&=
+           \left[ {\begin{array}{cc}
+            5 & 6 \\
+            7 & 8 \\
+           \end{array} } \right]\\
+           A \cdot B &= 
+           \left[ {\begin{array}{cc}
+            19 & 22 \\
+            43 & 50 \\
+           \end{array} } \right]\\
+           B \cdot A &= 
+           \left[ {\begin{array}{cc}
+            23 & 34 \\
+            31 & 46 \\
+           \end{array} } \right]\\
+        \end{split}
+      \]
+
+      Since the operation is not commutative it cannot be a field.
+
+    \subsection*{(iii)}
+    The set of 2x2 matrices with entries in $\mathbb{R}$ and non zero determinant is not a field because the operation multiplication is not commutative. As a counter example take the following.
+
+    \[
+        \begin{split}
+            A&=
+           \left[ {\begin{array}{cc}
+            1 & 2 \\
+            3 & 4 \\
+           \end{array} } \right]\\
+           B&=
+           \left[ {\begin{array}{cc}
+            5 & 6 \\
+            7 & 8 \\
+           \end{array} } \right]\\
+           A \cdot B &= 
+           \left[ {\begin{array}{cc}
+            19 & 22 \\
+            43 & 50 \\
+           \end{array} } \right]\\
+           B \cdot A &= 
+           \left[ {\begin{array}{cc}
+            23 & 34 \\
+            31 & 46 \\
+           \end{array} } \right]\\
+        \end{split}
+      \]
+
+    \subsection*{(iv)}
+    The set of 2x2 matrices with entries in $\mathbb{R}$ and determinant 1 is not a field because addition is not an operation on this set. Take the following as a counter example. 
+
+    \[
+        \begin{split}
+            A&=
+           \left[ {\begin{array}{cc}
+            2 & 1 \\
+            3 & 2 \\
+           \end{array} } \right]\\
+           B&=
+           \left[ {\begin{array}{cc}
+            2 & 1 \\
+            3 & 2 \\
+           \end{array} } \right]\\
+           A + B &= 
+           \left[ {\begin{array}{cc}
+            4 & 2 \\
+            6 & 4 \\
+           \end{array} } \right]\\
+        \end{split}
+    \]
+
+    Since we can see that $A = B$ and their determinant is one. This should result in an element that is in the set. However, we see that the determinant of the result is 4 which is not in the set thus addition is not an operation and this is not a field.
+
+  \section*{2.D}
+    \subsection*{(i)}
+    Let us assume that there exists an element $a \in F$ such that  $0 \cdot a = a \cdot 0 = b$. Where b is an element such that $b \neq 0$ and $b \in F$. We will now show by counter example that this violates the inverse property of fields. We will first d the element $b^{\prime}$ which is the multiplicative inverse of $b$ which we know exists because of the inverse property of fields. We will then multiply both sides of our expression by $b^{\prime}$.
+
+    \[
+      \begin{split}
+        b^{\prime} \cdot a \cdot 0 = b \cdot b^{\prime}
+      \end{split}
+    \]
+
+    We know that $b \cdot b^{\prime}$ is 1 by the definition of a multiplicative inverse. We also know that $(b^{\prime} \cdot a)$ is an element of the field and by the associative and commutative properties of the field. Since it is another element in the field we will call it $q$. Thus our new expression is
+
+    \[
+      \begin{split}
+       q \cdot 0 = 1
+      \end{split},
+    \]
+
+    but we have now arrived at a contradiction because by the properties of a field 0 cannot have a multiplicative inverse, but as we can see q is zero's multiplicative inverse. Thus, for F to be a field $0 \cdot a = a \cdot 0 = 0$ for all elements $a \in F$.
+  
+  \subsection*{(ii)}
+      To prove the theorem I used the fact that multiplication is commutative and associative in a field. I also used the fact that there is a multiplicative identity 1 as an indirect result of using an inverse element for multiplication. The final property I used is that there is no multiplicative inverse element for 0 and there is an inverse for every element other than zero. Everything else you could throw away including all of the addition properties.
+
+
+
+\end{document}

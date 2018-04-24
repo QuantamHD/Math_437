@@ -1,0 +1,61 @@
+\documentclass{article}
+  \usepackage{amssymb}
+  \usepackage{geometry}
+  \usepackage{amsmath}
+  \usepackage{placeins}
+
+
+  \begin{document}
+  
+  \title{Chapter 4}
+  \author{Ethan Mahintorabi}
+  
+  \maketitle
+
+  \section*{(4.A)}
+    \subsection*{(i)}
+    We will assume that there is an $a \cdot b = 0$ such that $a,b \in R$ and that $b \neq 0$ as is the definition of zero divisor. We then show that
+
+    \begin{equation*}
+      \begin{split}
+        x \cdot y &= 0\\
+        x^{\prime} \cdot x \cdot y &= 0\\
+        1 \cdot y &= 0\\
+        y &= 0
+      \end{split}  
+    \end{equation*}
+
+    thus we have a arrived a contradiction because we said that $y \neq 0$.
+
+
+    \subsection{(ii)}
+    We will show that 
+
+    \[
+      A = \begin{bmatrix}
+        1 & 2\\
+        3 & 4
+      \end{bmatrix}
+    \]
+
+    is a unit matrix by showing that there exists some $A^{\prime} \in R$ such that
+    $A^{\prime} \cdot A = 1$. Since we can show that
+
+
+    \begin{equation*}
+      \begin{split}
+        A^{\prime} \cdot A &= 1\\
+        \begin{bmatrix}
+          -2 & 1\\
+          \frac{3}{2} & \frac{-1}{2}
+        \end{bmatrix} \cdot A \cdot y &= 1\\
+      \end{split}  
+    \end{equation*}
+
+    In cannot be a zerodivisor by our theorem in (i).
+
+
+    \subsection{(iii)}
+    We will begin by analyzing the nilpotent elements of $\mathbb{Z}/8\mathbb{Z}$
+    
+\end{document}

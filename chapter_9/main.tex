@@ -1,0 +1,118 @@
+\documentclass{article}
+  \usepackage{amssymb}
+  \usepackage{geometry}
+  \usepackage{amsmath}
+  \usepackage{placeins}
+
+
+  \begin{document}
+  
+  \title{Chapter 9}
+  \author{Ethan Mahintorabi}
+  
+  \maketitle
+
+  \section*{9.A}
+    \subsection*{(i)}
+      To show that the function $\varphi:R \rightarrow R/I$ given by $r \mapsto r + I$ is in general a ring homomorphism we must show that $\varphi(n + m) = \varphi(n) + \varphi(m)$ and $\varphi(nm) = \varphi(n) \cdot \varphi(m)$, indeed for $n,m \in R$
+
+      \begin{align*}
+        \varphi(n + m) &= (n+m) + I  && \text{By defintion of } \varphi \\
+        &= (n + I) + (m + I) && \text{By defintion of addition in } R/I\\
+        &= \varphi(n) + \varphi(m) && \text{By defintion of } \varphi
+      \end{align*}
+
+      \noindent and
+
+      \begin{align*}
+        \varphi(nm) &= (nm) + I  && \text{By defintion of } \varphi \\
+        &= (n + I) \cdot (m + I) && \text{By defintion of multiplication in } R/I\\
+        &= \varphi(n) \cdot \varphi(m) && \text{By defintion of } \varphi.
+      \end{align*}
+
+
+      Thus, we have shown that quotient rings are generally ring homomorphisms. It was also shown in Example 9.10 that the ring homomorphism is surjective.
+
+    \subsection*{(ii)}
+      To show that the natural inclusion map $\iota: R \rightarrow S$ given by $s \mapsto s$ is a ring homomorphism we must show that $\iota(n + m) = \iota(n) + \iota(m)$ for $n,m \in S$. Indeed,
+
+      \begin{align*}
+        \iota(n + m) &= (n + m)  && \text{By defintion of } \iota \\
+        &=  (n) + (m) && \text{By defintion of subring addition in } R\\
+        &= \iota(n) + \iota(m) && \text{By defintion of } \iota,
+      \end{align*}
+
+      \noindent and
+
+      \begin{align*}
+        \iota(nm) &= (nm)  && \text{By defintion of } \iota \\
+        &=  (n) \cdot (m) && \text{By defintion of subring multiplication in } R\\
+        &= \iota(n) \cdot \iota(m) && \text{By defintion of } \iota.
+      \end{align*}
+
+
+      Thus, we have shown that the natural inclusion map of a subring is in general a ring homomorphism. It was also shown in Example 9.11 that this homomorphism is injective.
+
+    \subsection*{(iii)}
+      The function $\varphi: \mathbb{Z} \rightarrow \mathbb{Z}$ given by $n \mapsto 3n$ is not a ring homomorphism because it violates the property that $\varphi(nm) = \varphi(n)\varphi(m)$ with $n,m \in \mathbb{Z}$. Specifically, 
+
+      \begin{align*}
+        \varphi(2 \cdot 3) &= 3 \cdot (2 \cdot 3)  \\
+        &= 3 \cdot(6)\\
+        &= 18
+      \end{align*}
+
+      \noindent and with the other definition of $\varphi$,
+      
+      \begin{align*}
+        \varphi(2) \cdot \varphi(3) &= 3(2) \cdot 3(3)  \\
+        &= 6 \cdot 9\\
+        &= 54.
+      \end{align*}
+
+      This violates the multiplication property of ring homomorphisms thus, it cannot be a ring homomorphism.
+
+
+  \subsection*{(9.B)}
+      \subsection*{(i)}
+      The function $\varphi: \mathbb{Z} \rightarrow 3\mathbb{Z}$ given by $n \mapsto 3n$ is not a homomorphism because the condition that $\varphi(nm) = \varphi(n)\varphi(m)$ does not hold for the case $n = 2, m=3$, and indeed
+
+      \begin{align*}
+        \varphi(2 \cdot 3) &= 3 \cdot (2 \cdot 3)  \\
+        &= 3 \cdot(6)\\
+        &= 18
+      \end{align*}
+
+      \noindent and with the other definition of $\varphi$,
+      
+      \begin{align*}
+        \varphi(2) \cdot \varphi(3) &= 3(2) \cdot 3(3)  \\
+        &= 6 \cdot 9\\
+        &= 54.
+      \end{align*}
+
+      \noindent Since the property does not hold it cannot be a ring homomorphism.
+
+      \subsection*{(ii)}
+      The function $\varphi: 2\mathbb{Z} \rightarrow 3\mathbb{Z}$ given by $2n \mapsto 3n$ is not a homomorphism because the condition that $\varphi(nm) = \varphi(n)\varphi(m)$ does not hold for the case $n = 2, m=4$, and indeed
+
+      \begin{align*}
+        \varphi(2 \cdot 4) &= \varphi(8)  \\
+        &= 3 \cdot 4\\
+        &= 12\\
+      \end{align*}
+
+      \noindent and with the other definition of $\varphi$,
+      
+      \begin{align*}
+        \varphi(2) \cdot \varphi(4) &= 3(1) \cdot 3(2)  \\
+        &= 3 \cdot 6\\
+        &= 18.
+      \end{align*}
+
+      \noindent Since the property does not hold it cannot be a ring homomorphism.
+
+
+
+
+\end{document}
